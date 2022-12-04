@@ -1,5 +1,5 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 import { asyncRegisterUser } from '../states/users/action'
 import RegisterInput from '../components/RegisterInput'
@@ -19,7 +19,7 @@ function RegisterPage () {
         <h2 className='title-auth'>Register To Mengdiskusi</h2>
         <div className='wrap-content-auth'>
           <RegisterInput register={onRegister} />
-          <p>Already have an account? <a href='/'>Login</a></p>
+          <p>Already have an account? <Link to='/'>Login</Link></p>
         </div>
     </div>
   )

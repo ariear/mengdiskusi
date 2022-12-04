@@ -1,5 +1,6 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
+import { Link } from 'react-router-dom'
 import LoginInput from '../components/LoginInput'
 import { asyncSetAuthUser } from '../states/authUser/action'
 
@@ -15,7 +16,7 @@ function LoginPage () {
         <h2 className='title-auth'>Login To Mengdiskusi</h2>
         <div className='wrap-content-auth'>
           <LoginInput login={onLogin} />
-          <p>Dont have an account? <a href='/register'>Register</a></p>
+          <p>Dont have an account? <Link to='/register'>Register</Link></p>
         </div>
     </div>
   )

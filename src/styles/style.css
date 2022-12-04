@@ -75,7 +75,7 @@ nav div{
     margin-bottom: 14px;
 }
 
-.btn-auth{
+.btn{
     margin: 16px 0;
     padding: 10px 20px;
     width: 100%;
@@ -86,9 +86,122 @@ nav div{
 
 .wrap-input label{
     margin-bottom: 5px;
+    color: white;
 }
-.wrap-input input{
+.wrap-input input, textarea{
     padding: 10px 10px;
     border-radius: 5px;
     border: none;
+}
+
+.main-page{
+    padding: 20px 0;
+    margin: auto;
+    width: 1200px;
+    color: white;
+}
+
+@media screen and (max-width: 1440px) {
+    .main-page{
+        width: 90vw;
+    }
+}
+
+.main-page h1{
+    font-size: 34px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: white;
+}
+
+.card-thread{
+    background-color: #FF9E9E;
+    margin-bottom: 16px;
+    padding: 20px;
+    border-radius: 7px;
+}
+
+.card-thread-title{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.child-desc{
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+.category{
+    background-color: #C060A1;
+    width: max-content;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    margin-top: 10px;
+    color: white;
+}
+
+.threads-list a{
+    color: black;
+    text-decoration: none;
+}
+
+.btn-plus{
+    position: fixed;
+    bottom: 40px;
+    right: 45px;
+    color: white;
+}
+
+.child-desc-detail{
+    margin: 18px 0;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+.child-desc-detail img{
+    width: 25px;
+    border-radius: 50%;
+    margin: 0 7px;
+}
+
+.title-add-comment{
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.input-content-comment{
+    width: 100%;
+}
+
+.card-comment{
+    border: 1px solid white;
+    border-radius: 7px;
+    padding: 10px;
+    margin-bottom: 18px;
+}
+.card-comment-content{
+    margin-top: 10px;
+    font-weight: 300;
+}
+.desc-card-comment{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.desc-card-comment div{
+    display: flex;
+    align-items: center;
+}
+.desc-card-comment div p{
+    font-weight: 500;
+}
+.desc-card-comment img{
+    width: 24px;
+    border-radius: 50%;
+    margin-right: 10px;
 }

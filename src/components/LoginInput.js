@@ -16,7 +16,7 @@ function LoginInput ({ login }) {
             <label>Password</label>
             <input type='password' value={password} onChange={onPasswordChange} />
         </div>
-        <button type='button' className='btn-auth' onClick={() => login({ email, password })} >Login</button>
+        <button type='button' className='btn' onClick={() => login({ email, password })} >Login</button>
     </form>
   )
 }

@@ -9,6 +9,7 @@ import RegisterPage from './pages/RegisterPage'
 import DetailPage from './pages/DetailPage'
 import { asyncPreloadProcess } from './states/isPreload/action'
 import { asyncUnsetAuthUser } from './states/authUser/action'
+import AddThreadPage from './pages/AddThreadPage'
 
 function App () {
   const {
@@ -55,6 +56,7 @@ function App () {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/threads/:id" element={<DetailPage />} />
+            <Route path="/new" element={<AddThreadPage />} />
           </Routes>
         </main>
       </div>

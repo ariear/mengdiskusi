@@ -21,7 +21,7 @@ function RegisterInput ({ register }) {
             <label>Password</label>
             <input type='password' value={password} onChange={onPasswordChange} />
         </div>
-        <button type='button' className='btn-auth' onClick={() => register({ name, email, password })} >Login</button>
+        <button type='button' className='btn' onClick={() => register({ name, email, password })} >Login</button>
     </form>
   )
 }
